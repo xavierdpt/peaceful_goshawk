@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,SACA,UACA,6BAAkC,CAGpC,kBACE,gBAAgB","file":"static/css/main.5a9b3206.css","sourcesContent":["body {\n  margin: 0;\n  padding: 0;\n  font-family: 'Roboto', sans-serif;\n}\n\n.mi-memory:before {\n  content:'memory'\n}\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}

@@ -1,23 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 var ncp = require('ncp').ncp;
+var rimraf = require('rimraf');
 
 const src = './build';
 const dest = '../docs';
 
-fs.readdir(dest, (err, files) => {
-  if (err) throw err;
-
-  for (const file of files) {
-    fs.unlink(path.join(dest, file), err => {
-      if (err) throw err;
-    });
-  }
-});
+rimraf(dest, function () { console.log('dest cleared'); });
 
 ncp(src, dest, function (err) {
  if (err) {
    if (err) throw err;
  }
- console.log('done!');
+ console.log('build ready');
 });
